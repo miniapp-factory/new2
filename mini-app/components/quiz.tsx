@@ -90,6 +90,11 @@ export default function Quiz() {
         <h2 className="text-xl font-semibold">
           You are most similar to {result}!
         </h2>
+        <img
+          src={`/${result.toLowerCase()}.png`}
+          alt={result}
+          className="w-32 h-32 object-contain mt-4"
+        />
         <Share
           text={`I just took the Disney Princess Quiz and discovered I'm most similar to ${result}! Check it out: ${process.env.NEXT_PUBLIC_URL}`}
           className="mt-2"
