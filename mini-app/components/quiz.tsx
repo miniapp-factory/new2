@@ -93,7 +93,7 @@ export default function Quiz() {
         <img
           src={`/${result.toLowerCase()}.png`}
           alt={result}
-          className="w-32 h-32 object-contain mt-4"
+          className="w-48 h-48 object-contain mt-4"
         />
         <Share
           text={`I just took the Disney Princess Quiz and discovered I'm most similar to ${result}! Check it out: ${process.env.NEXT_PUBLIC_URL}`}
